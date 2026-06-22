@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Profile Card</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <article class="profile-card" aria-labelledby="profile-name">
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <span class="theme-toggle__icon" aria-hidden="true">Dark</span>
+      </button>
+
+      <header class="profile-card__header">
+        <div class="profile-card__avatar" aria-hidden="true">YN</div>
+        <div>
+          <h1 id="profile-name">Your Name</h1>
+          <p class="profile-card__role">Frontend Developer</p>
+        </div>
+      </header>
+
+      <p class="profile-card__bio">
+        I build thoughtful, accessible web experiences with clean interfaces,
+        responsive layouts, and a focus on details that make products easier to use.
+      </p>
+
+      <nav class="profile-card__links" aria-label="Social links">
+        <a href="https://github.com/" aria-label="Visit GitHub profile">
+          <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+            <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.61-3.37-1.18-3.37-1.18-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.04 1.53 1.04.9 1.52 2.35 1.08 2.92.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.57 9.57 0 0 1 12 6.02c.85 0 1.7.11 2.5.34 1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.21 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/" aria-label="Visit LinkedIn profile">
+          <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+            <path d="M6.94 8.9H3.76v10.35h3.18V8.9ZM5.35 4.75a1.85 1.85 0 1 0 0 3.7 1.85 1.85 0 0 0 0-3.7Zm13.9 8.83c0-3.05-1.63-4.47-3.8-4.47a3.28 3.28 0 0 0-2.96 1.63h-.04V8.9H9.4v10.35h3.18v-5.12c0-1.35.26-2.66 1.93-2.66 1.65 0 1.67 1.54 1.67 2.75v5.03h3.18v-5.67Z"/>
+          </svg>
+        </a>
+        <a href="https://x.com/" aria-label="Visit X profile">
+          <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+            <path d="M14.44 10.35 21.08 2.7h-1.57l-5.77 6.65-4.6-6.65H3.83l6.96 10.06-6.96 8.02H5.4l6.08-7.01 4.86 7.01h5.31l-7.21-10.43Zm-2.15 2.48-.7-.99-5.62-7.96h2.42l4.53 6.42.7.99 5.89 8.34h-2.42l-4.8-6.8Z"/>
+          </svg>
+        </a>
+      </nav>
+
+      <section class="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+        <div class="projects__grid">
+          <article class="project-card">
+            <div class="project-card__content">
+              <h3>Portfolio Site</h3>
+              <p>A responsive personal website with accessible navigation and polished project pages.</p>
+            </div>
+            <a class="project-card__link" href="#" aria-label="View Portfolio Site project">View project</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__content">
+              <h3>Task Dashboard</h3>
+              <p>A compact dashboard for organizing daily work with clear status and priority states.</p>
+            </div>
+            <a class="project-card__link" href="#" aria-label="View Task Dashboard project">View project</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__content">
+              <h3>Weather App</h3>
+              <p>A lightweight weather interface focused on readable forecasts and fast interactions.</p>
+            </div>
+            <a class="project-card__link" href="#" aria-label="View Weather App project">View project</a>
+          </article>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
